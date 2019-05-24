@@ -4,8 +4,8 @@
             <el-col>
                 <el-menu  class="el-menu-demo" mode="horizontal">
                     <el-menu-item index="1"><router-link to="/">Home</router-link></el-menu-item>
-                    <el-menu-item index="2"><router-link :to="{name:'menuNav'}">Menu</router-link></el-menu-item>
-                    <el-menu-item index="3"><router-link :to="{name:'about'}">About</router-link></el-menu-item>
+                    <el-menu-item index="2"><router-link :to="{name:'menu'}">Menu</router-link></el-menu-item>
+                    <el-menu-item index="3"><router-link :to="{name:'about-menu'}">About</router-link></el-menu-item>
                     <el-menu-item index="4"><router-link :to="{name:'management'}">Management</router-link></el-menu-item>
                     <el-menu-item index="5"><router-link :to="{name:'login'}">Login</router-link></el-menu-item>
                     <el-menu-item index="6"><router-link :to="{name:'registe'}">Registe</router-link></el-menu-item>

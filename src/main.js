@@ -14,6 +14,18 @@ Vue.use(ElementUI)
 // const router = new VueRouter({
 //   routes
 // });
+
+// router.beforeEach((to,from,next)=>{
+//   if(to.path=='/login'||to.path=='/registe'){
+//     next();
+//   }else{
+//     alert('need to login or registe');
+//     next('/login');
+//   }
+// })
+// router.afterEach((to,from)=>{
+//   alert('exit')
+// })
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

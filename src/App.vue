@@ -8,6 +8,22 @@
     <el-row id="content-body">
       <el-col>
         <router-view></router-view>
+        <router-view></router-view>
+        <router-view></router-view>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="6">
+        <router-view name="contack"></router-view>
+      </el-col>
+      <el-col :span="6">
+        <router-view name="history"></router-view>
+      </el-col>
+      <el-col :span="6">
+        <router-view name="delivery"></router-view>
+      </el-col>
+      <el-col :span="6">
+        <router-view name="order"></router-view>
       </el-col>
     </el-row>
   </div>

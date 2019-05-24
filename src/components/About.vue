@@ -3,29 +3,36 @@
     <el-row>
         <el-col :span="4">
             <el-menu
-            class="el-menu-vertical-demo"
-            default-active="2">
+            class="el-menu-vertical-demo" default-active="1">
             <el-menu-item index="1">
+                <router-link class="router-div" tag="div" to="contack">
                 <i class="el-icon-menu"></i>
-                <router-link tag="span" to="/home">paka</router-link>
+                Contack</router-link>
             </el-menu-item>
             <el-menu-item index="2">
-                <i class="el-icon-document"></i>
-                <span slot="title">Cinema Nav</span>
+                <router-link class="router-div" tag="div" :to="{name: 'deliveryLink'}">
+                    <i class="el-icon-document"></i>
+                    Delivery</router-link>
             </el-menu-item>
             <el-menu-item index="3">
-                <i class="el-icon-setting"></i>
-                <span slot="title">Member Nav</span>
+                <router-link class="router-div" tag="div" :to="{name:'historyLink'}">
+                    <i class="el-icon-setting"></i>
+                    History</router-link>
+            </el-menu-item>
+            <el-menu-item index="4">
+                <router-link class="router-div" tag="div" :to="{name: 'orderLink'}">
+                    <i class="el-icon-setting"></i>
+                    Order</router-link>
             </el-menu-item>
             </el-menu>
         </el-col>
         <el-col :offset="1" :span="17">
             <el-card class="box-card">
                 <div slot="header" class="clearfix">
-                    <span>卡片名称</span>
+                    <span>the title</span>
                     <!-- <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button> -->
                 </div>
-                <div>
+                <div class="text item">
                     <router-view></router-view>
                 </div>
             </el-card>
@@ -47,5 +54,11 @@ export default {
 }
 .el-card{
     margin-top:10px;
+}
+.el-menu-item{
+    padding: 0 !important;
+}
+.router-div{
+    padding-left:20px;
 }
 </style>
